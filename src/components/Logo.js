@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Header = () => {
+const Logo = () => {
     const appName = "Welcome to the Pokedex";
     return <div>
     <header><h1> {appName} </h1>
@@ -8,4 +8,4 @@ const Header = () => {
 </div>;
 }
 
-export default Header;
+export default Logo;

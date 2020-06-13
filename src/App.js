@@ -1,13 +1,14 @@
 import React from 'react';
-import Header from './components/Header'
-import Pokedex from './components/Pokedex'
+import Logo from './components/Logo'
+import BestPokemon from './components/BestPokemon'
 import CaughtPokemon from './components/CaughtPokemon'
 
 const App = () => {
     return <div>
-        < Header />
+        < Logo />
+        < BestPokemon />
         < CaughtPokemon />
-        < Pokedex />
+        
         
     </div>;
 }
