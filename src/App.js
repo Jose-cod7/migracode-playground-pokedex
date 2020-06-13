@@ -4,10 +4,12 @@ import BestPokemon from './components/BestPokemon'
 import CaughtPokemon from './components/CaughtPokemon'
 
 const App = () => {
+    const poderes = ['Anticipation', 'Adaptability', 'Run-Away'];
     return <div>
-        < Logo />
-        < BestPokemon />
+        <Logo appName="Pokedex" />
+        < BestPokemon abilities={poderes} />
         < CaughtPokemon />
+        
         
         
     </div>;
