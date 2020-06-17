@@ -1,7 +1,27 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-const CaughtPokemon = (props) => {
+class CaughtPokemon extends Component {
+     state = {
+         caughtpokemon: 0
+     };
+
+     CaughtPokemon = () => {
+      this.setState(previousState => {
+          return {
+              caughtpokemon: previousState.caughtpokemon + 1
+          }
+      })  
     
-return <p>Caught 0 Pokemon on{props.infodate}</p>
+    }
+
+    render () {
+        return (
+            <div>
+                CaughtPokemon: {this.state.caughtpokemon}
+                <button onClick={this.CaughtPokemon}>Catch them all</button>
+            </div>
+        )
+    }
+
 }
 export default CaughtPokemon;
