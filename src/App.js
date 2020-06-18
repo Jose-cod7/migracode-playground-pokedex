@@ -2,7 +2,7 @@ import React from 'react';
 import Logo from './components/Logo'
 import BestPokemon from './components/BestPokemon'
 import CaughtPokemon from './components/CaughtPokemon'
-
+import './App.css'
 const App = () => {
     const poderes = ['Anticipation', 'Adaptability', 'Run-Away'];
     const date = (new Date().toLocaleDateString());
