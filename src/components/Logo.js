@@ -1,11 +1,11 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-const Logo = (props) => {
-    console.log(props)
-    const hi = "Pepe's "
+class Logo extends Component {
+    render () {
     return (
-        <div><header><h1>{hi}{props.appName}</h1><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/009_f2.png" alt="pokemon"></img></header></div>
+        <div><header><h1>{this.props.appName}</h1><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/009_f2.png" alt="pokemon"></img></header></div>
     )
+    }
     }
 
 export default Logo;

@@ -31,7 +31,7 @@ import ResetButoon from './ResetButton'
         render () {
             return (
                 <div>
-                    <p>Caught {this.state.caughtpokemon} Pokemon on </p> {this.props.date}
+                    <p>Caught {this.state.caughtpokemon} Pokemon on </p> {this.props.infodate}
                     <button onClick={this.catch}>Catch them all</button>
 
                     {this.state.caughtpokemon > 0
