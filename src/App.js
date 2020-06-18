@@ -5,7 +5,7 @@ import CaughtPokemon from './components/CaughtPokemon'
 import './App.css'
 
 const App = () => {
-    const poderes = ['Anticipation', 'Adaptability', 'Run-Away'];
+    const poderes = ['Blaster water', 'Adaptability', 'Run-Away'];
     const today = (new Date().toLocaleDateString());
     return <div>
         <Logo appName="Pepe's Pokedex" />

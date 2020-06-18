@@ -10,6 +10,11 @@ import ResetButoon from './ResetButton'
         componentDidMount (){
             console.log('loaded')
         }
+        
+
+        componentDidUpdate (){}
+
+        componentWillMount (){}
 
         catch = () => {
             this.setState(previousState => {
