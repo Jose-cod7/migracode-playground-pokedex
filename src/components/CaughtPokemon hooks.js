@@ -8,6 +8,13 @@ import ResetButoon from './ResetButton'
          SetCaught(totalCaught + 1)
      }
 
+     return (
+         <div>
+           
+            <button onClick={totalIncrement}>Catch them all</button>
+         </div>
+     )
+
  } 
 
 export default CaughtPokemon;
