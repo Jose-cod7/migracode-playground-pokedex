@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from './components/Logo'
-import BestPokemon from './components/BestPokemon'
+import BestPokemonFetcher from './components/BestPokemonFetcher'
 import CaughtPokemonhooks from './components/CaughtPokemonhooks'
 import './App.css'
 
@@ -9,7 +9,7 @@ const App = () => {
     const today = (new Date().toLocaleDateString());
     return <div>
         <Logo appName="Pepe's Pokedex" />
-        < BestPokemon abilities={poderes} />
+        < BestPokemonFetcher abilities={poderes} />
         < CaughtPokemonhooks infodate={today} />    {/*prop={aqui van las variables}*/}
         
         
