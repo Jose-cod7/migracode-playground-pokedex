@@ -10,17 +10,16 @@ function BestPokemonFetcher (props) {
             .then(res =>res.json())
             .then(data => setBestPokemon(data) )
     }, [props])
-
-    if (!bestPokemon) {
-        return null
-    } else {
-        console.log(bestPokemon.abilities)
-        return <BestPokemon 
-            pokemon={bestPokemon} 
-            abilities={bestPokemon.abilities} 
-        />
-                
-    }
+  
+    return (
+    !bestPokemon ?  null
+        : 
+        <BestPokemon 
+        pokemon={bestPokemon} 
+        abilities={bestPokemon.abilities} 
+        />          
+    
+    )
 
 }
 

@@ -2,7 +2,7 @@ import React,  {useState} from 'react';
 
 const Counter = () => {
     const [count, setCount] = useState(0);
-    {/*const [pokemonNameInput, setName] = useState("");*/}
+    //{/*const [pokemonNameInput, setName] = useState("");*/}
 
     const increment = () => {
         setCount(count + 1)
