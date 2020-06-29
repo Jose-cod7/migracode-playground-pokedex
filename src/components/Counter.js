@@ -2,7 +2,7 @@ import React,  {useState} from 'react';
 
 const Counter = () => {
     const [count, setCount] = useState(0);
-    //{/*const [pokemonNameInput, setName] = useState("");*/}
+    const [pokemonNameInput, setName] = useState("");
 
     const increment = () => {
         setCount(count + 1)
@@ -12,12 +12,17 @@ const Counter = () => {
         setCount(0)
     };
 
+    const handleInputChange = (event) => {
+        setName(event.target.value)
+    }
+
     return (
         <div>
-            Caught {count} Pokemons
+           <h3> Caught {count} Pokemons </h3>
+            <input type='text' placeholder='pokemon name' value={pokemonNameInput} onChange={handleInputChange}></input>
             <button onClick={increment}>Caught one more:</button>
             <button onClick={reset}>Reset</button>
-            {/*<input type='text' placeholder='pokemon name' value={pokemonNameInput}></input>*/}
+            
         </div>
     )
 }
